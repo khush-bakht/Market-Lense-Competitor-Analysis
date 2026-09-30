@@ -1,0 +1,3289 @@
+{
+  "config": {
+    "status": "success",
+    "version": "2.0",
+    "limits": {
+      "min_competitors": 1,
+      "max_competitors": 15,
+      "max_discover_results": 50,
+      "max_reviews_per_place": 1000
+    },
+    "review_windows": [
+      {
+        "key": "30d",
+        "label": "Last 30 days",
+        "default": true
+      },
+      {
+        "key": "60d",
+        "label": "Last 60 days",
+        "default": false
+      },
+      {
+        "key": "90d",
+        "label": "Last 90 days",
+        "default": false
+      },
+      {
+        "key": "all",
+        "label": "All available reviews",
+        "default": false
+      }
+    ],
+    "theme_taxonomy": [
+      {
+        "key": "service_quality",
+        "label": "Core product / service quality"
+      },
+      {
+        "key": "staff_friendliness",
+        "label": "Staff friendliness & attitude"
+      },
+      {
+        "key": "professionalism_expertise",
+        "label": "Professionalism & expertise"
+      },
+      {
+        "key": "wait_time_speed",
+        "label": "Wait time & speed"
+      },
+      {
+        "key": "pricing_value",
+        "label": "Pricing & value for money"
+      },
+      {
+        "key": "cleanliness_ambience",
+        "label": "Cleanliness & ambience"
+      },
+      {
+        "key": "communication_booking",
+        "label": "Communication & booking / availability"
+      },
+      {
+        "key": "location_access",
+        "label": "Location, parking & access"
+      },
+      {
+        "key": "trust_honesty",
+        "label": "Trust & honesty"
+      }
+    ],
+    "health_score": {
+      "weights": {
+        "rating_quality": 0.3,
+        "social_proof": 0.2,
+        "momentum": 0.2,
+        "recent_sentiment": 0.15,
+        "responsiveness": 0.1,
+        "profile": 0.05
+      },
+      "labels": {
+        "rating_quality": "All-time rating",
+        "social_proof": "Review volume",
+        "momentum": "Review momentum",
+        "recent_sentiment": "Recent sentiment",
+        "responsiveness": "Owner responsiveness",
+        "profile": "Profile completeness"
+      }
+    },
+    "metrics": [
+      {
+        "key": "health_score",
+        "label": "Overall Health Score",
+        "unit": "/100",
+        "higher_is_better": true
+      },
+      {
+        "key": "lifetime_rating",
+        "label": "Google rating (all-time)",
+        "unit": "★",
+        "higher_is_better": true
+      },
+      {
+        "key": "lifetime_reviews",
+        "label": "Total reviews (all-time)",
+        "unit": "",
+        "higher_is_better": true
+      },
+      {
+        "key": "window_avg_rating",
+        "label": "Average rating (selected period)",
+        "unit": "★",
+        "higher_is_better": true
+      },
+      {
+        "key": "window_review_count",
+        "label": "Reviews in selected period",
+        "unit": "",
+        "higher_is_better": true
+      },
+      {
+        "key": "velocity_per_30d",
+        "label": "New reviews per 30 days",
+        "unit": "",
+        "higher_is_better": true
+      },
+      {
+        "key": "pct_5star",
+        "label": "5-star share (period)",
+        "unit": "%",
+        "higher_is_better": true
+      },
+      {
+        "key": "pct_negative",
+        "label": "1–2★ share (period)",
+        "unit": "%",
+        "higher_is_better": false
+      },
+      {
+        "key": "reply_rate",
+        "label": "Owner reply rate",
+        "unit": "%",
+        "higher_is_better": true
+      },
+      {
+        "key": "negative_reply_rate",
+        "label": "Reply rate to 1–2★ reviews",
+        "unit": "%",
+        "higher_is_better": true
+      },
+      {
+        "key": "avg_reply_days",
+        "label": "Avg. owner reply time (days)",
+        "unit": "d",
+        "higher_is_better": false
+      },
+      {
+        "key": "photos_count",
+        "label": "Photos on Google profile",
+        "unit": "",
+        "higher_is_better": true
+      },
+      {
+        "key": "profile_completeness",
+        "label": "Profile completeness",
+        "unit": "/100",
+        "higher_is_better": true
+      },
+      {
+        "key": "search_rank",
+        "label": "Google Maps search position",
+        "unit": "#",
+        "higher_is_better": false
+      }
+    ],
+    "goal_suggestions": [
+      "Get more reviews",
+      "Raise my average rating",
+      "Win more bookings / customers",
+      "Justify premium pricing",
+      "Compete on price",
+      "Improve customer experience",
+      "Stand out from competitors",
+      "Reduce negative reviews"
+    ],
+    "business_type_suggestions": [
+      "dental clinic",
+      "restaurant",
+      "cafe",
+      "gym",
+      "salon",
+      "hospital",
+      "pharmacy",
+      "hotel",
+      "real estate agency",
+      "car repair shop",
+      "school",
+      "supermarket"
+    ],
+    "report_languages": [
+      "English",
+      "Urdu",
+      "Roman Urdu",
+      "Arabic",
+      "Hindi",
+      "Spanish",
+      "French"
+    ]
+  },
+  "discover": {
+    "status": "success",
+    "query": {
+      "search_term": "gym",
+      "location": "R, P",
+      "area_provided": false,
+      "purpose": "discover_competitors"
+    },
+    "count": 5,
+    "excluded_count": 0,
+    "places": [
+      {
+        "place_id": "P0",
+        "name": "Place 0",
+        "category": "Gym",
+        "categories": [],
+        "address": {
+          "full": "0 Main Rd, Rawalpindi, Pakistan",
+          "street": "0 Main Rd",
+          "neighborhood": null,
+          "city": "Rawalpindi",
+          "state": null,
+          "postal_code": null,
+          "country_code": "PK"
+        },
+        "location": {
+          "lat": 33.6,
+          "lng": 73
+        },
+        "distance_km": null,
+        "phone": "+92 300 0000",
+        "website": null,
+        "rating": 4,
+        "reviews_count": 100,
+        "price_level": null,
+        "google_maps_url": null,
+        "image_url": null,
+        "search_rank": 1,
+        "is_permanently_closed": false,
+        "is_temporarily_closed": false
+      },
+      {
+        "place_id": "P1",
+        "name": "Place 1",
+        "category": "Gym",
+        "categories": [],
+        "address": {
+          "full": "1 Main Rd, Rawalpindi, Pakistan",
+          "street": "1 Main Rd",
+          "neighborhood": null,
+          "city": "Rawalpindi",
+          "state": null,
+          "postal_code": null,
+          "country_code": "PK"
+        },
+        "location": {
+          "lat": 33.61,
+          "lng": 73
+        },
+        "distance_km": null,
+        "phone": "+92 300 0001",
+        "website": null,
+        "rating": 4.1,
+        "reviews_count": 200,
+        "price_level": null,
+        "google_maps_url": null,
+        "image_url": null,
+        "search_rank": 2,
+        "is_permanently_closed": false,
+        "is_temporarily_closed": false
+      },
+      {
+        "place_id": "P2",
+        "name": "Place 2",
+        "category": "Gym",
+        "categories": [],
+        "address": {
+          "full": "2 Main Rd, Rawalpindi, Pakistan",
+          "street": "2 Main Rd",
+          "neighborhood": null,
+          "city": "Rawalpindi",
+          "state": null,
+          "postal_code": null,
+          "country_code": "PK"
+        },
+        "location": {
+          "lat": 33.620000000000005,
+          "lng": 73
+        },
+        "distance_km": null,
+        "phone": "+92 300 0002",
+        "website": null,
+        "rating": 4.2,
+        "reviews_count": 300,
+        "price_level": null,
+        "google_maps_url": null,
+        "image_url": null,
+        "search_rank": 3,
+        "is_permanently_closed": false,
+        "is_temporarily_closed": false
+      },
+      {
+        "place_id": "P3",
+        "name": "Place 3",
+        "category": "Gym",
+        "categories": [],
+        "address": {
+          "full": "3 Main Rd, Rawalpindi, Pakistan",
+          "street": "3 Main Rd",
+          "neighborhood": null,
+          "city": "Rawalpindi",
+          "state": null,
+          "postal_code": null,
+          "country_code": "PK"
+        },
+        "location": {
+          "lat": 33.63,
+          "lng": 73
+        },
+        "distance_km": null,
+        "phone": "+92 300 0003",
+        "website": null,
+        "rating": 4.3,
+        "reviews_count": 400,
+        "price_level": null,
+        "google_maps_url": null,
+        "image_url": null,
+        "search_rank": 4,
+        "is_permanently_closed": false,
+        "is_temporarily_closed": false
+      },
+      {
+        "place_id": "P4",
+        "name": "Place 4",
+        "category": "Gym",
+        "categories": [],
+        "address": {
+          "full": "4 Main Rd, Rawalpindi, Pakistan",
+          "street": "4 Main Rd",
+          "neighborhood": null,
+          "city": "Rawalpindi",
+          "state": null,
+          "postal_code": null,
+          "country_code": "PK"
+        },
+        "location": {
+          "lat": 33.64,
+          "lng": 73
+        },
+        "distance_km": null,
+        "phone": "+92 300 0004",
+        "website": null,
+        "rating": 4.4,
+        "reviews_count": 500,
+        "price_level": null,
+        "google_maps_url": null,
+        "image_url": null,
+        "search_rank": 5,
+        "is_permanently_closed": false,
+        "is_temporarily_closed": false
+      }
+    ]
+  },
+  "stats": {
+    "status": "success",
+    "own_business": {
+      "role": "own",
+      "place_id": "OWN",
+      "name": "Mine",
+      "data_status": "success",
+      "error_reason": null,
+      "category": null,
+      "categories": [
+        "Gym",
+        "Fitness"
+      ],
+      "address": {
+        "full": "Full address OWN",
+        "street": null,
+        "neighborhood": null,
+        "city": "Rawalpindi",
+        "state": null,
+        "postal_code": null,
+        "country_code": null
+      },
+      "location": {
+        "lat": 33.6,
+        "lng": 73.05
+      },
+      "distance_km": 0,
+      "phone": "123",
+      "website": "https://x.com",
+      "emails": [
+        "a@b.com"
+      ],
+      "social": {
+        "facebook": "fb.com/x"
+      },
+      "google_maps_url": null,
+      "price_level": null,
+      "flags": {
+        "permanently_closed": false,
+        "temporarily_closed": false,
+        "claimed": null
+      },
+      "description": null,
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "hours": "6 AM to 10 PM"
+        },
+        {
+          "day": "Saturday",
+          "hours": "Closed"
+        },
+        {
+          "day": "Sunday",
+          "hours": "Closed"
+        }
+      ],
+      "hours_summary": {
+        "days_open": 1,
+        "weekend_days_open": 0,
+        "open_24h_days": 0
+      },
+      "popular_times_summary": {
+        "busiest_day": "Monday",
+        "quietest_day": "Tuesday",
+        "peak_slot": {
+          "day": "Monday",
+          "hour": "18:00",
+          "occupancy_pct": 90
+        }
+      },
+      "amenities": [
+        "Accessibility: Wheelchair accessible entrance"
+      ],
+      "images_count": 40,
+      "review_tags": [
+        {
+          "title": "trainers",
+          "count": 12
+        }
+      ],
+      "people_also_search": [
+        {
+          "name": "Other Gym",
+          "category": null,
+          "rating": 4.1,
+          "reviews_count": 50
+        }
+      ],
+      "search_rank": null,
+      "lifetime": {
+        "rating": 4.2,
+        "reviews_count": 300,
+        "distribution": {
+          "1": 5,
+          "2": 2,
+          "3": 3,
+          "4": 20,
+          "5": 70
+        },
+        "distribution_pct": {
+          "1": 5,
+          "2": 2,
+          "3": 3,
+          "4": 20,
+          "5": 70
+        }
+      },
+      "window": null,
+      "notable_reviews": {
+        "recent_negative": [],
+        "most_liked": []
+      },
+      "profile_completeness": {
+        "score": 90,
+        "missing": [
+          "business_description"
+        ]
+      },
+      "health": {
+        "score": null,
+        "breakdown": {}
+      }
+    },
+    "competitors": [
+      {
+        "role": "competitor",
+        "place_id": "C1",
+        "name": "Comp One",
+        "data_status": "success",
+        "error_reason": null,
+        "category": null,
+        "categories": [
+          "Gym",
+          "Fitness"
+        ],
+        "address": {
+          "full": "Full address C1",
+          "street": null,
+          "neighborhood": null,
+          "city": "Rawalpindi",
+          "state": null,
+          "postal_code": null,
+          "country_code": null
+        },
+        "location": {
+          "lat": 33.62,
+          "lng": 73.05
+        },
+        "distance_km": 2.22,
+        "phone": "123",
+        "website": "https://x.com",
+        "emails": [
+          "a@b.com"
+        ],
+        "social": {
+          "facebook": "fb.com/x"
+        },
+        "google_maps_url": null,
+        "price_level": null,
+        "flags": {
+          "permanently_closed": false,
+          "temporarily_closed": false,
+          "claimed": null
+        },
+        "description": null,
+        "opening_hours": [
+          {
+            "day": "Monday",
+            "hours": "6 AM to 10 PM"
+          },
+          {
+            "day": "Saturday",
+            "hours": "Closed"
+          },
+          {
+            "day": "Sunday",
+            "hours": "Closed"
+          }
+        ],
+        "hours_summary": {
+          "days_open": 1,
+          "weekend_days_open": 0,
+          "open_24h_days": 0
+        },
+        "popular_times_summary": {
+          "busiest_day": "Monday",
+          "quietest_day": "Tuesday",
+          "peak_slot": {
+            "day": "Monday",
+            "hour": "18:00",
+            "occupancy_pct": 90
+          }
+        },
+        "amenities": [
+          "Accessibility: Wheelchair accessible entrance"
+        ],
+        "images_count": 40,
+        "review_tags": [
+          {
+            "title": "trainers",
+            "count": 12
+          }
+        ],
+        "people_also_search": [
+          {
+            "name": "Other Gym",
+            "category": null,
+            "rating": 4.1,
+            "reviews_count": 50
+          }
+        ],
+        "search_rank": null,
+        "lifetime": {
+          "rating": 4.6,
+          "reviews_count": 900,
+          "distribution": {
+            "1": 5,
+            "2": 2,
+            "3": 3,
+            "4": 20,
+            "5": 70
+          },
+          "distribution_pct": {
+            "1": 5,
+            "2": 2,
+            "3": 3,
+            "4": 20,
+            "5": 70
+          }
+        },
+        "window": null,
+        "notable_reviews": {
+          "recent_negative": [],
+          "most_liked": []
+        },
+        "profile_completeness": {
+          "score": 90,
+          "missing": [
+            "business_description"
+          ]
+        },
+        "health": {
+          "score": null,
+          "breakdown": {}
+        }
+      }
+    ],
+    "benchmark_preview": {
+      "metrics": [
+        {
+          "key": "lifetime_rating",
+          "label": "Google rating (all-time)",
+          "unit": "★",
+          "higher_is_better": true,
+          "values": [
+            {
+              "place_id": "OWN",
+              "name": "Mine",
+              "role": "own",
+              "value": 4.2
+            },
+            {
+              "place_id": "C1",
+              "name": "Comp One",
+              "role": "competitor",
+              "value": 4.6
+            }
+          ],
+          "best": {
+            "place_id": "C1",
+            "name": "Comp One",
+            "value": 4.6
+          },
+          "worst": {
+            "place_id": "OWN",
+            "name": "Mine",
+            "value": 4.2
+          },
+          "competitor_avg": 4.6,
+          "you": 4.2,
+          "your_rank": 2,
+          "ranked_total": 2,
+          "delta_vs_avg": -0.4,
+          "relative_diff_pct": -8.7,
+          "verdict": "behind"
+        },
+        {
+          "key": "lifetime_reviews",
+          "label": "Total reviews (all-time)",
+          "unit": "",
+          "higher_is_better": true,
+          "values": [
+            {
+              "place_id": "OWN",
+              "name": "Mine",
+              "role": "own",
+              "value": 300
+            },
+            {
+              "place_id": "C1",
+              "name": "Comp One",
+              "role": "competitor",
+              "value": 900
+            }
+          ],
+          "best": {
+            "place_id": "C1",
+            "name": "Comp One",
+            "value": 900
+          },
+          "worst": {
+            "place_id": "OWN",
+            "name": "Mine",
+            "value": 300
+          },
+          "competitor_avg": 900,
+          "you": 300,
+          "your_rank": 2,
+          "ranked_total": 2,
+          "delta_vs_avg": -600,
+          "relative_diff_pct": -66.7,
+          "verdict": "behind"
+        },
+        {
+          "key": "photos_count",
+          "label": "Photos on Google profile",
+          "unit": "",
+          "higher_is_better": true,
+          "values": [
+            {
+              "place_id": "OWN",
+              "name": "Mine",
+              "role": "own",
+              "value": 40
+            },
+            {
+              "place_id": "C1",
+              "name": "Comp One",
+              "role": "competitor",
+              "value": 40
+            }
+          ],
+          "best": {
+            "place_id": "OWN",
+            "name": "Mine",
+            "value": 40
+          },
+          "worst": {
+            "place_id": "C1",
+            "name": "Comp One",
+            "value": 40
+          },
+          "competitor_avg": 40,
+          "you": 40,
+          "your_rank": 1,
+          "ranked_total": 2,
+          "delta_vs_avg": 0,
+          "relative_diff_pct": 0,
+          "verdict": "leading"
+        },
+        {
+          "key": "profile_completeness",
+          "label": "Profile completeness",
+          "unit": "/100",
+          "higher_is_better": true,
+          "values": [
+            {
+              "place_id": "OWN",
+              "name": "Mine",
+              "role": "own",
+              "value": 90
+            },
+            {
+              "place_id": "C1",
+              "name": "Comp One",
+              "role": "competitor",
+              "value": 90
+            }
+          ],
+          "best": {
+            "place_id": "OWN",
+            "name": "Mine",
+            "value": 90
+          },
+          "worst": {
+            "place_id": "C1",
+            "name": "Comp One",
+            "value": 90
+          },
+          "competitor_avg": 90,
+          "you": 90,
+          "your_rank": 1,
+          "ranked_total": 2,
+          "delta_vs_avg": 0,
+          "relative_diff_pct": 0,
+          "verdict": "leading"
+        }
+      ],
+      "advantages": [],
+      "gaps": [
+        {
+          "key": "lifetime_reviews",
+          "label": "Total reviews (all-time)",
+          "unit": "",
+          "you": 300,
+          "competitor_avg": 900,
+          "best_name": "Comp One",
+          "best_value": 900,
+          "relative_diff_pct": -66.7
+        },
+        {
+          "key": "lifetime_rating",
+          "label": "Google rating (all-time)",
+          "unit": "★",
+          "you": 4.2,
+          "competitor_avg": 4.6,
+          "best_name": "Comp One",
+          "best_value": 4.6,
+          "relative_diff_pct": -8.7
+        }
+      ],
+      "head_to_head": {
+        "you": {
+          "place_id": "OWN",
+          "name": "Mine"
+        },
+        "competitor": {
+          "place_id": "C1",
+          "name": "Comp One"
+        },
+        "rows": [
+          {
+            "key": "lifetime_rating",
+            "label": "Google rating (all-time)",
+            "unit": "★",
+            "you": 4.2,
+            "them": 4.6,
+            "winner": "them",
+            "difference": -0.4
+          },
+          {
+            "key": "lifetime_reviews",
+            "label": "Total reviews (all-time)",
+            "unit": "",
+            "you": 300,
+            "them": 900,
+            "winner": "them",
+            "difference": -600
+          },
+          {
+            "key": "photos_count",
+            "label": "Photos on Google profile",
+            "unit": "",
+            "you": 40,
+            "them": 40,
+            "winner": "tie",
+            "difference": 0
+          },
+          {
+            "key": "profile_completeness",
+            "label": "Profile completeness",
+            "unit": "/100",
+            "you": 90,
+            "them": 90,
+            "winner": "tie",
+            "difference": 0
+          }
+        ],
+        "score": {
+          "you": 0,
+          "them": 2,
+          "ties": 2
+        }
+      }
+    },
+    "data_quality": {
+      "requested": 2,
+      "succeeded": 2,
+      "errors": []
+    }
+  },
+  "reviews": {
+    "status": "success",
+    "place": {
+      "role": "competitor",
+      "place_id": "C1",
+      "name": "Comp One",
+      "data_status": "success",
+      "error_reason": null,
+      "category": null,
+      "categories": [
+        "Gym",
+        "Fitness"
+      ],
+      "address": {
+        "full": "Full address C1",
+        "street": null,
+        "neighborhood": null,
+        "city": "Rawalpindi",
+        "state": null,
+        "postal_code": null,
+        "country_code": null
+      },
+      "location": {
+        "lat": 33.62,
+        "lng": 73.05
+      },
+      "distance_km": null,
+      "phone": "123",
+      "website": "https://x.com",
+      "emails": [
+        "a@b.com"
+      ],
+      "social": {
+        "facebook": "fb.com/x"
+      },
+      "google_maps_url": null,
+      "price_level": null,
+      "flags": {
+        "permanently_closed": false,
+        "temporarily_closed": false,
+        "claimed": null
+      },
+      "description": null,
+      "opening_hours": [
+        {
+          "day": "Monday",
+          "hours": "6 AM to 10 PM"
+        },
+        {
+          "day": "Saturday",
+          "hours": "Closed"
+        },
+        {
+          "day": "Sunday",
+          "hours": "Closed"
+        }
+      ],
+      "hours_summary": {
+        "days_open": 1,
+        "weekend_days_open": 0,
+        "open_24h_days": 0
+      },
+      "popular_times_summary": {
+        "busiest_day": "Monday",
+        "quietest_day": "Tuesday",
+        "peak_slot": {
+          "day": "Monday",
+          "hour": "18:00",
+          "occupancy_pct": 90
+        }
+      },
+      "amenities": [
+        "Accessibility: Wheelchair accessible entrance"
+      ],
+      "images_count": 40,
+      "review_tags": [
+        {
+          "title": "trainers",
+          "count": 12
+        }
+      ],
+      "people_also_search": [
+        {
+          "name": "Other Gym",
+          "category": null,
+          "rating": 4.1,
+          "reviews_count": 50
+        }
+      ],
+      "search_rank": null,
+      "lifetime": {
+        "rating": 4.6,
+        "reviews_count": 900,
+        "distribution": {
+          "1": 5,
+          "2": 2,
+          "3": 3,
+          "4": 20,
+          "5": 70
+        },
+        "distribution_pct": {
+          "1": 5,
+          "2": 2,
+          "3": 3,
+          "4": 20,
+          "5": 70
+        }
+      },
+      "window": {
+        "key": "30d",
+        "label": "Last 30 days",
+        "start_date": "2026-08-29",
+        "end_date": "2026-09-28",
+        "review_count": 14,
+        "rated_count": 14,
+        "avg_rating": 3.86,
+        "distribution": {
+          "1": 2,
+          "2": 0,
+          "3": 4,
+          "4": 0,
+          "5": 8
+        },
+        "pct_5star": 57.1,
+        "pct_negative": 14.3,
+        "negative_count": 2,
+        "reply_rate": 50,
+        "negative_reply_rate": 50,
+        "avg_reply_days": 1,
+        "pct_with_photos": 21.4,
+        "pct_with_text": 78.6,
+        "avg_review_length": 46,
+        "velocity_per_30d": 14,
+        "cap_reached": false,
+        "momentum": {
+          "direction": "steady",
+          "newer_half": 7,
+          "older_half": 7
+        },
+        "trend": {
+          "granularity": "week",
+          "points": [
+            {
+              "period": "2026-08-24",
+              "count": 1,
+              "avg_rating": 5
+            },
+            {
+              "period": "2026-08-31",
+              "count": 3,
+              "avg_rating": 4.33
+            },
+            {
+              "period": "2026-09-07",
+              "count": 3,
+              "avg_rating": 3
+            },
+            {
+              "period": "2026-09-14",
+              "count": 3,
+              "avg_rating": 4.33
+            },
+            {
+              "period": "2026-09-21",
+              "count": 3,
+              "avg_rating": 4.33
+            },
+            {
+              "period": "2026-09-28",
+              "count": 1,
+              "avg_rating": 1
+            }
+          ]
+        }
+      },
+      "notable_reviews": {
+        "recent_negative": [
+          {
+            "rating": 1,
+            "published_at": "2026-09-12T22:03:23.627Z",
+            "likes": 3,
+            "text": "Review text number 7 great staff but long wait",
+            "owner_replied": true
+          }
+        ],
+        "most_liked": [
+          {
+            "rating": 3,
+            "published_at": "2026-09-21T17:15:23.627Z",
+            "likes": 3,
+            "text": "Review text number 3 great staff but long wait",
+            "owner_replied": true
+          },
+          {
+            "rating": 1,
+            "published_at": "2026-09-12T22:03:23.627Z",
+            "likes": 3,
+            "text": "Review text number 7 great staff but long wait",
+            "owner_replied": true
+          },
+          {
+            "rating": 5,
+            "published_at": "2026-09-04T02:51:23.627Z",
+            "likes": 3,
+            "text": "Review text number 11 great staff but long wait",
+            "owner_replied": true
+          }
+        ]
+      },
+      "profile_completeness": {
+        "score": 90,
+        "missing": [
+          "business_description"
+        ]
+      },
+      "health": {
+        "score": null,
+        "breakdown": {}
+      }
+    },
+    "window": {
+      "key": "30d",
+      "label": "Last 30 days",
+      "start_date": "2026-08-29",
+      "end_date": "2026-09-28",
+      "review_count": 14,
+      "rated_count": 14,
+      "avg_rating": 3.86,
+      "distribution": {
+        "1": 2,
+        "2": 0,
+        "3": 4,
+        "4": 0,
+        "5": 8
+      },
+      "pct_5star": 57.1,
+      "pct_negative": 14.3,
+      "negative_count": 2,
+      "reply_rate": 50,
+      "negative_reply_rate": 50,
+      "avg_reply_days": 1,
+      "pct_with_photos": 21.4,
+      "pct_with_text": 78.6,
+      "avg_review_length": 46,
+      "velocity_per_30d": 14,
+      "cap_reached": false,
+      "momentum": {
+        "direction": "steady",
+        "newer_half": 7,
+        "older_half": 7
+      },
+      "trend": {
+        "granularity": "week",
+        "points": [
+          {
+            "period": "2026-08-24",
+            "count": 1,
+            "avg_rating": 5
+          },
+          {
+            "period": "2026-08-31",
+            "count": 3,
+            "avg_rating": 4.33
+          },
+          {
+            "period": "2026-09-07",
+            "count": 3,
+            "avg_rating": 3
+          },
+          {
+            "period": "2026-09-14",
+            "count": 3,
+            "avg_rating": 4.33
+          },
+          {
+            "period": "2026-09-21",
+            "count": 3,
+            "avg_rating": 4.33
+          },
+          {
+            "period": "2026-09-28",
+            "count": 1,
+            "avg_rating": 1
+          }
+        ]
+      }
+    },
+    "reviews": [
+      {
+        "review_id": "r0",
+        "rating": 1,
+        "text": "",
+        "published_at": "2026-09-28T07:39:23.627Z",
+        "likes": 0,
+        "owner_reply": null,
+        "owner_reply_at": null,
+        "reply_days": null,
+        "has_photos": true,
+        "is_local_guide": false
+      },
+      {
+        "review_id": "r1",
+        "rating": 5,
+        "text": "Review text number 1 great staff but long wait",
+        "published_at": "2026-09-26T02:51:23.627Z",
+        "likes": 1,
+        "owner_reply": "Thanks",
+        "owner_reply_at": "2026-09-27T02:51:23.627Z",
+        "reply_days": 1,
+        "has_photos": false,
+        "is_local_guide": false
+      },
+      {
+        "review_id": "r2",
+        "rating": 5,
+        "text": "Review text number 2 great staff but long wait",
+        "published_at": "2026-09-23T22:03:23.627Z",
+        "likes": 2,
+        "owner_reply": null,
+        "owner_reply_at": null,
+        "reply_days": null,
+        "has_photos": false,
+        "is_local_guide": false
+      }
+    ],
+    "returned_count": 14,
+    "filtered_by_rating": false
+  },
+  "analyze": {
+    "status": "success",
+    "report": {
+      "meta": {
+        "generated_at": "2026-09-28T07:39:23.661Z",
+        "business_type": "gym",
+        "location": {
+          "area": null,
+          "city": null,
+          "country": null
+        },
+        "review_window": {
+          "key": "60d",
+          "label": "Last 60 days",
+          "start_date": "2026-07-30",
+          "end_date": "2026-09-28",
+          "max_reviews_per_place": 300
+        },
+        "comparison_mode": "market_benchmark",
+        "own_business_included": true,
+        "competitors_count": 2,
+        "goals": [
+          "Get more reviews"
+        ],
+        "owner_context_provided": true,
+        "report_language": "English"
+      },
+      "entities": [
+        {
+          "role": "own",
+          "place_id": "OWN",
+          "name": "Mine",
+          "data_status": "success",
+          "error_reason": null,
+          "category": null,
+          "categories": [
+            "Gym",
+            "Fitness"
+          ],
+          "address": {
+            "full": "Full address OWN",
+            "street": null,
+            "neighborhood": null,
+            "city": "Rawalpindi",
+            "state": null,
+            "postal_code": null,
+            "country_code": null
+          },
+          "location": {
+            "lat": 33.6,
+            "lng": 73.05
+          },
+          "distance_km": 0,
+          "phone": "123",
+          "website": "https://x.com",
+          "emails": [
+            "a@b.com"
+          ],
+          "social": {
+            "facebook": "fb.com/x"
+          },
+          "google_maps_url": null,
+          "price_level": null,
+          "flags": {
+            "permanently_closed": false,
+            "temporarily_closed": false,
+            "claimed": null
+          },
+          "description": null,
+          "opening_hours": [
+            {
+              "day": "Monday",
+              "hours": "6 AM to 10 PM"
+            },
+            {
+              "day": "Saturday",
+              "hours": "Closed"
+            },
+            {
+              "day": "Sunday",
+              "hours": "Closed"
+            }
+          ],
+          "hours_summary": {
+            "days_open": 1,
+            "weekend_days_open": 0,
+            "open_24h_days": 0
+          },
+          "popular_times_summary": {
+            "busiest_day": "Monday",
+            "quietest_day": "Tuesday",
+            "peak_slot": {
+              "day": "Monday",
+              "hour": "18:00",
+              "occupancy_pct": 90
+            }
+          },
+          "amenities": [
+            "Accessibility: Wheelchair accessible entrance"
+          ],
+          "images_count": 40,
+          "review_tags": [
+            {
+              "title": "trainers",
+              "count": 12
+            }
+          ],
+          "people_also_search": [
+            {
+              "name": "Other Gym",
+              "category": null,
+              "rating": 4.1,
+              "reviews_count": 50
+            }
+          ],
+          "search_rank": null,
+          "lifetime": {
+            "rating": 4.2,
+            "reviews_count": 300,
+            "distribution": {
+              "1": 5,
+              "2": 2,
+              "3": 3,
+              "4": 20,
+              "5": 70
+            },
+            "distribution_pct": {
+              "1": 5,
+              "2": 2,
+              "3": 3,
+              "4": 20,
+              "5": 70
+            }
+          },
+          "window": {
+            "key": "60d",
+            "label": "Last 60 days",
+            "start_date": "2026-07-30",
+            "end_date": "2026-09-28",
+            "review_count": 12,
+            "rated_count": 12,
+            "avg_rating": 4.25,
+            "distribution": {
+              "1": 0,
+              "2": 3,
+              "3": 0,
+              "4": 0,
+              "5": 9
+            },
+            "pct_5star": 75,
+            "pct_negative": 25,
+            "negative_count": 3,
+            "reply_rate": 100,
+            "negative_reply_rate": 100,
+            "avg_reply_days": 0.5,
+            "pct_with_photos": 0,
+            "pct_with_text": 100,
+            "avg_review_length": 52,
+            "velocity_per_30d": 6,
+            "cap_reached": false,
+            "momentum": {
+              "direction": "accelerating",
+              "newer_half": 12,
+              "older_half": 0
+            },
+            "trend": {
+              "granularity": "month",
+              "points": [
+                {
+                  "period": "2026-09",
+                  "count": 12,
+                  "avg_rating": 4.25
+                }
+              ]
+            }
+          },
+          "notable_reviews": {
+            "recent_negative": [
+              {
+                "rating": 2,
+                "published_at": "2026-09-28T07:39:23.627Z",
+                "likes": 0,
+                "text": "Mine review 0: the trainers are great, wait was long",
+                "owner_replied": true
+              },
+              {
+                "rating": 2,
+                "published_at": "2026-09-23T12:27:23.627Z",
+                "likes": 1,
+                "text": "Mine review 4: the trainers are great, wait was long",
+                "owner_replied": true
+              },
+              {
+                "rating": 2,
+                "published_at": "2026-09-18T17:15:23.627Z",
+                "likes": 2,
+                "text": "Mine review 8: the trainers are great, wait was long",
+                "owner_replied": true
+              }
+            ],
+            "most_liked": [
+              {
+                "rating": 5,
+                "published_at": "2026-09-25T22:03:23.627Z",
+                "likes": 2,
+                "text": "Mine review 2: the trainers are great, wait was long",
+                "owner_replied": true
+              },
+              {
+                "rating": 5,
+                "published_at": "2026-09-22T07:39:23.627Z",
+                "likes": 2,
+                "text": "Mine review 5: the trainers are great, wait was long",
+                "owner_replied": true
+              },
+              {
+                "rating": 2,
+                "published_at": "2026-09-18T17:15:23.627Z",
+                "likes": 2,
+                "text": "Mine review 8: the trainers are great, wait was long",
+                "owner_replied": true
+              }
+            ]
+          },
+          "profile_completeness": {
+            "score": 90,
+            "missing": [
+              "business_description"
+            ]
+          },
+          "health": {
+            "score": 64.7,
+            "breakdown": {
+              "rating_quality": {
+                "label": "All-time rating",
+                "score": 60,
+                "weight": 0.3,
+                "effective_weight": 0.3
+              },
+              "social_proof": {
+                "label": "Review volume",
+                "score": 83.9,
+                "weight": 0.2,
+                "effective_weight": 0.2
+              },
+              "momentum": {
+                "label": "Review momentum",
+                "score": 30,
+                "weight": 0.2,
+                "effective_weight": 0.2
+              },
+              "recent_sentiment": {
+                "label": "Recent sentiment",
+                "score": 62.5,
+                "weight": 0.15,
+                "effective_weight": 0.15
+              },
+              "responsiveness": {
+                "label": "Owner responsiveness",
+                "score": 100,
+                "weight": 0.1,
+                "effective_weight": 0.1
+              },
+              "profile": {
+                "label": "Profile completeness",
+                "score": 90,
+                "weight": 0.05,
+                "effective_weight": 0.05
+              }
+            }
+          },
+          "ai": {
+            "reviews_analyzed": 12,
+            "coverage": "all_text_reviews",
+            "sentiment_summary": "Mostly positive.",
+            "strengths": [
+              {
+                "theme": "Trainers",
+                "evidence_summary": "Reviewers praise trainers",
+                "mentions": 6,
+                "frequency": "recurring"
+              }
+            ],
+            "weaknesses": [
+              {
+                "theme": "Wait",
+                "evidence_summary": "Long waits",
+                "mentions": 12,
+                "frequency": "frequent"
+              }
+            ],
+            "theme_scores": {
+              "service_quality": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "staff_friendliness": {
+                "positive": 8,
+                "negative": 1,
+                "mentions": 9,
+                "positive_pct": 66.7,
+                "negative_pct": 8.3,
+                "net_pct": 58.3
+              },
+              "professionalism_expertise": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "wait_time_speed": {
+                "positive": 0,
+                "negative": 12,
+                "mentions": 12,
+                "positive_pct": 0,
+                "negative_pct": 100,
+                "net_pct": -100
+              },
+              "pricing_value": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "cleanliness_ambience": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "communication_booking": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "location_access": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "trust_honesty": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              }
+            },
+            "standout_offerings": [
+              "PT"
+            ],
+            "customer_segments": [
+              "Students"
+            ],
+            "pricing_perception": {
+              "label": "fair",
+              "evidence_summary": ""
+            },
+            "urgent_issues": [
+              {
+                "issue": "Wait",
+                "evidence_summary": "x",
+                "review_count": 2
+              }
+            ],
+            "representative_quotes": [
+              {
+                "quote": "the trainers are great",
+                "sentiment": "positive"
+              }
+            ]
+          }
+        },
+        {
+          "role": "competitor",
+          "place_id": "C1",
+          "name": "Comp One",
+          "data_status": "success",
+          "error_reason": null,
+          "category": null,
+          "categories": [
+            "Gym",
+            "Fitness"
+          ],
+          "address": {
+            "full": "Full address C1",
+            "street": null,
+            "neighborhood": null,
+            "city": "Rawalpindi",
+            "state": null,
+            "postal_code": null,
+            "country_code": null
+          },
+          "location": {
+            "lat": 33.62,
+            "lng": 73.05
+          },
+          "distance_km": 2.22,
+          "phone": "123",
+          "website": "https://x.com",
+          "emails": [
+            "a@b.com"
+          ],
+          "social": {
+            "facebook": "fb.com/x"
+          },
+          "google_maps_url": null,
+          "price_level": null,
+          "flags": {
+            "permanently_closed": false,
+            "temporarily_closed": false,
+            "claimed": null
+          },
+          "description": null,
+          "opening_hours": [
+            {
+              "day": "Monday",
+              "hours": "6 AM to 10 PM"
+            },
+            {
+              "day": "Saturday",
+              "hours": "Closed"
+            },
+            {
+              "day": "Sunday",
+              "hours": "Closed"
+            }
+          ],
+          "hours_summary": {
+            "days_open": 1,
+            "weekend_days_open": 0,
+            "open_24h_days": 0
+          },
+          "popular_times_summary": {
+            "busiest_day": "Monday",
+            "quietest_day": "Tuesday",
+            "peak_slot": {
+              "day": "Monday",
+              "hour": "18:00",
+              "occupancy_pct": 90
+            }
+          },
+          "amenities": [
+            "Accessibility: Wheelchair accessible entrance"
+          ],
+          "images_count": 40,
+          "review_tags": [
+            {
+              "title": "trainers",
+              "count": 12
+            }
+          ],
+          "people_also_search": [
+            {
+              "name": "Other Gym",
+              "category": null,
+              "rating": 4.1,
+              "reviews_count": 50
+            }
+          ],
+          "search_rank": null,
+          "lifetime": {
+            "rating": 4.6,
+            "reviews_count": 900,
+            "distribution": {
+              "1": 5,
+              "2": 2,
+              "3": 3,
+              "4": 20,
+              "5": 70
+            },
+            "distribution_pct": {
+              "1": 5,
+              "2": 2,
+              "3": 3,
+              "4": 20,
+              "5": 70
+            }
+          },
+          "window": {
+            "key": "60d",
+            "label": "Last 60 days",
+            "start_date": "2026-07-30",
+            "end_date": "2026-09-28",
+            "review_count": 40,
+            "rated_count": 40,
+            "avg_rating": 4.63,
+            "distribution": {
+              "1": 0,
+              "2": 5,
+              "3": 0,
+              "4": 0,
+              "5": 35
+            },
+            "pct_5star": 87.5,
+            "pct_negative": 12.5,
+            "negative_count": 5,
+            "reply_rate": 25,
+            "negative_reply_rate": 100,
+            "avg_reply_days": 0.5,
+            "pct_with_photos": 0,
+            "pct_with_text": 100,
+            "avg_review_length": 57,
+            "velocity_per_30d": 20,
+            "cap_reached": false,
+            "momentum": {
+              "direction": "accelerating",
+              "newer_half": 25,
+              "older_half": 15
+            },
+            "trend": {
+              "granularity": "month",
+              "points": [
+                {
+                  "period": "2026-08",
+                  "count": 17,
+                  "avg_rating": 4.65
+                },
+                {
+                  "period": "2026-09",
+                  "count": 23,
+                  "avg_rating": 4.61
+                }
+              ]
+            }
+          },
+          "notable_reviews": {
+            "recent_negative": [
+              {
+                "rating": 2,
+                "published_at": "2026-09-28T07:39:23.627Z",
+                "likes": 0,
+                "text": "Comp One review 0: the trainers are great, wait was long",
+                "owner_replied": true
+              },
+              {
+                "rating": 2,
+                "published_at": "2026-09-18T17:15:23.627Z",
+                "likes": 2,
+                "text": "Comp One review 8: the trainers are great, wait was long",
+                "owner_replied": true
+              },
+              {
+                "rating": 2,
+                "published_at": "2026-09-09T02:51:23.627Z",
+                "likes": 1,
+                "text": "Comp One review 16: the trainers are great, wait was long",
+                "owner_replied": true
+              }
+            ],
+            "most_liked": [
+              {
+                "rating": 5,
+                "published_at": "2026-09-25T22:03:23.627Z",
+                "likes": 2,
+                "text": "Comp One review 2: the trainers are great, wait was long",
+                "owner_replied": false
+              },
+              {
+                "rating": 5,
+                "published_at": "2026-09-22T07:39:23.627Z",
+                "likes": 2,
+                "text": "Comp One review 5: the trainers are great, wait was long",
+                "owner_replied": false
+              },
+              {
+                "rating": 2,
+                "published_at": "2026-09-18T17:15:23.627Z",
+                "likes": 2,
+                "text": "Comp One review 8: the trainers are great, wait was long",
+                "owner_replied": true
+              }
+            ]
+          },
+          "profile_completeness": {
+            "score": 90,
+            "missing": [
+              "business_description"
+            ]
+          },
+          "health": {
+            "score": 83.2,
+            "breakdown": {
+              "rating_quality": {
+                "label": "All-time rating",
+                "score": 80,
+                "weight": 0.3,
+                "effective_weight": 0.3
+              },
+              "social_proof": {
+                "label": "Review volume",
+                "score": 100,
+                "weight": 0.2,
+                "effective_weight": 0.2
+              },
+              "momentum": {
+                "label": "Review momentum",
+                "score": 100,
+                "weight": 0.2,
+                "effective_weight": 0.2
+              },
+              "recent_sentiment": {
+                "label": "Recent sentiment",
+                "score": 81.5,
+                "weight": 0.15,
+                "effective_weight": 0.15
+              },
+              "responsiveness": {
+                "label": "Owner responsiveness",
+                "score": 25,
+                "weight": 0.1,
+                "effective_weight": 0.1
+              },
+              "profile": {
+                "label": "Profile completeness",
+                "score": 90,
+                "weight": 0.05,
+                "effective_weight": 0.05
+              }
+            }
+          },
+          "ai": {
+            "reviews_analyzed": 40,
+            "coverage": "all_text_reviews",
+            "sentiment_summary": "Mostly positive.",
+            "strengths": [
+              {
+                "theme": "Trainers",
+                "evidence_summary": "Reviewers praise trainers",
+                "mentions": 6,
+                "frequency": "recurring"
+              }
+            ],
+            "weaknesses": [
+              {
+                "theme": "Wait",
+                "evidence_summary": "Long waits",
+                "mentions": 12,
+                "frequency": "frequent"
+              }
+            ],
+            "theme_scores": {
+              "service_quality": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "staff_friendliness": {
+                "positive": 8,
+                "negative": 1,
+                "mentions": 9,
+                "positive_pct": 20,
+                "negative_pct": 2.5,
+                "net_pct": 17.5
+              },
+              "professionalism_expertise": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "wait_time_speed": {
+                "positive": 0,
+                "negative": 40,
+                "mentions": 40,
+                "positive_pct": 0,
+                "negative_pct": 100,
+                "net_pct": -100
+              },
+              "pricing_value": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "cleanliness_ambience": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "communication_booking": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "location_access": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "trust_honesty": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              }
+            },
+            "standout_offerings": [
+              "PT"
+            ],
+            "customer_segments": [
+              "Students"
+            ],
+            "pricing_perception": {
+              "label": "fair",
+              "evidence_summary": ""
+            },
+            "urgent_issues": [
+              {
+                "issue": "Wait",
+                "evidence_summary": "x",
+                "review_count": 2
+              }
+            ],
+            "representative_quotes": [
+              {
+                "quote": "the trainers are great",
+                "sentiment": "positive"
+              }
+            ]
+          }
+        },
+        {
+          "role": "competitor",
+          "place_id": "C2",
+          "name": "Comp Two",
+          "data_status": "no_reviews_in_window",
+          "error_reason": null,
+          "category": null,
+          "categories": [
+            "Gym",
+            "Fitness"
+          ],
+          "address": {
+            "full": "Full address C2",
+            "street": null,
+            "neighborhood": null,
+            "city": "Rawalpindi",
+            "state": null,
+            "postal_code": null,
+            "country_code": null
+          },
+          "location": {
+            "lat": 33.64,
+            "lng": 73.05
+          },
+          "distance_km": 4.45,
+          "phone": "123",
+          "website": "https://x.com",
+          "emails": [
+            "a@b.com"
+          ],
+          "social": {
+            "facebook": "fb.com/x"
+          },
+          "google_maps_url": null,
+          "price_level": null,
+          "flags": {
+            "permanently_closed": false,
+            "temporarily_closed": false,
+            "claimed": null
+          },
+          "description": null,
+          "opening_hours": [
+            {
+              "day": "Monday",
+              "hours": "6 AM to 10 PM"
+            },
+            {
+              "day": "Saturday",
+              "hours": "Closed"
+            },
+            {
+              "day": "Sunday",
+              "hours": "Closed"
+            }
+          ],
+          "hours_summary": {
+            "days_open": 1,
+            "weekend_days_open": 0,
+            "open_24h_days": 0
+          },
+          "popular_times_summary": {
+            "busiest_day": "Monday",
+            "quietest_day": "Tuesday",
+            "peak_slot": {
+              "day": "Monday",
+              "hour": "18:00",
+              "occupancy_pct": 90
+            }
+          },
+          "amenities": [
+            "Accessibility: Wheelchair accessible entrance"
+          ],
+          "images_count": 40,
+          "review_tags": [
+            {
+              "title": "trainers",
+              "count": 12
+            }
+          ],
+          "people_also_search": [
+            {
+              "name": "Other Gym",
+              "category": null,
+              "rating": 4.1,
+              "reviews_count": 50
+            }
+          ],
+          "search_rank": null,
+          "lifetime": {
+            "rating": 4,
+            "reviews_count": 120,
+            "distribution": {
+              "1": 5,
+              "2": 2,
+              "3": 3,
+              "4": 20,
+              "5": 70
+            },
+            "distribution_pct": {
+              "1": 5,
+              "2": 2,
+              "3": 3,
+              "4": 20,
+              "5": 70
+            }
+          },
+          "window": {
+            "key": "60d",
+            "label": "Last 60 days",
+            "start_date": "2026-07-30",
+            "end_date": "2026-09-28",
+            "review_count": 0,
+            "rated_count": 0,
+            "avg_rating": null,
+            "distribution": {
+              "1": 0,
+              "2": 0,
+              "3": 0,
+              "4": 0,
+              "5": 0
+            },
+            "pct_5star": null,
+            "pct_negative": null,
+            "negative_count": 0,
+            "reply_rate": null,
+            "negative_reply_rate": null,
+            "avg_reply_days": null,
+            "pct_with_photos": null,
+            "pct_with_text": null,
+            "avg_review_length": null,
+            "velocity_per_30d": 0,
+            "cap_reached": false,
+            "momentum": {
+              "direction": "insufficient_data",
+              "newer_half": null,
+              "older_half": null
+            },
+            "trend": {
+              "granularity": "month",
+              "points": []
+            }
+          },
+          "notable_reviews": {
+            "recent_negative": [],
+            "most_liked": []
+          },
+          "profile_completeness": {
+            "score": 90,
+            "missing": [
+              "business_description"
+            ]
+          },
+          "health": {
+            "score": 45.7,
+            "breakdown": {
+              "rating_quality": {
+                "label": "All-time rating",
+                "score": 50,
+                "weight": 0.3,
+                "effective_weight": 0.333
+              },
+              "social_proof": {
+                "label": "Review volume",
+                "score": 70.5,
+                "weight": 0.2,
+                "effective_weight": 0.222
+              },
+              "momentum": {
+                "label": "Review momentum",
+                "score": 0,
+                "weight": 0.2,
+                "effective_weight": 0.222
+              },
+              "recent_sentiment": {
+                "label": "Recent sentiment",
+                "score": 50,
+                "weight": 0.15,
+                "effective_weight": 0.167
+              },
+              "responsiveness": {
+                "label": "Owner responsiveness",
+                "score": null,
+                "weight": 0.1,
+                "effective_weight": 0
+              },
+              "profile": {
+                "label": "Profile completeness",
+                "score": 90,
+                "weight": 0.05,
+                "effective_weight": 0.056
+              }
+            }
+          },
+          "ai": null
+        }
+      ],
+      "benchmark": {
+        "metrics": [
+          {
+            "key": "health_score",
+            "label": "Overall Health Score",
+            "unit": "/100",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 64.7
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 83.2
+              },
+              {
+                "place_id": "C2",
+                "name": "Comp Two",
+                "role": "competitor",
+                "value": 45.7
+              }
+            ],
+            "best": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 83.2
+            },
+            "worst": {
+              "place_id": "C2",
+              "name": "Comp Two",
+              "value": 45.7
+            },
+            "competitor_avg": 64.45,
+            "you": 64.7,
+            "your_rank": 2,
+            "ranked_total": 3,
+            "delta_vs_avg": 0.25,
+            "relative_diff_pct": 0.4,
+            "verdict": "competitive"
+          },
+          {
+            "key": "lifetime_rating",
+            "label": "Google rating (all-time)",
+            "unit": "★",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 4.2
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 4.6
+              },
+              {
+                "place_id": "C2",
+                "name": "Comp Two",
+                "role": "competitor",
+                "value": 4
+              }
+            ],
+            "best": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 4.6
+            },
+            "worst": {
+              "place_id": "C2",
+              "name": "Comp Two",
+              "value": 4
+            },
+            "competitor_avg": 4.3,
+            "you": 4.2,
+            "your_rank": 2,
+            "ranked_total": 3,
+            "delta_vs_avg": -0.1,
+            "relative_diff_pct": -2.3,
+            "verdict": "behind"
+          },
+          {
+            "key": "lifetime_reviews",
+            "label": "Total reviews (all-time)",
+            "unit": "",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 300
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 900
+              },
+              {
+                "place_id": "C2",
+                "name": "Comp Two",
+                "role": "competitor",
+                "value": 120
+              }
+            ],
+            "best": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 900
+            },
+            "worst": {
+              "place_id": "C2",
+              "name": "Comp Two",
+              "value": 120
+            },
+            "competitor_avg": 510,
+            "you": 300,
+            "your_rank": 2,
+            "ranked_total": 3,
+            "delta_vs_avg": -210,
+            "relative_diff_pct": -41.2,
+            "verdict": "behind"
+          },
+          {
+            "key": "window_avg_rating",
+            "label": "Average rating (selected period)",
+            "unit": "★",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 4.25
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 4.63
+              }
+            ],
+            "best": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 4.63
+            },
+            "worst": {
+              "place_id": "OWN",
+              "name": "Mine",
+              "value": 4.25
+            },
+            "competitor_avg": 4.63,
+            "you": 4.25,
+            "your_rank": 2,
+            "ranked_total": 2,
+            "delta_vs_avg": -0.38,
+            "relative_diff_pct": -8.2,
+            "verdict": "behind"
+          },
+          {
+            "key": "window_review_count",
+            "label": "Reviews in selected period",
+            "unit": "",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 12
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 40
+              },
+              {
+                "place_id": "C2",
+                "name": "Comp Two",
+                "role": "competitor",
+                "value": 0
+              }
+            ],
+            "best": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 40
+            },
+            "worst": {
+              "place_id": "C2",
+              "name": "Comp Two",
+              "value": 0
+            },
+            "competitor_avg": 20,
+            "you": 12,
+            "your_rank": 2,
+            "ranked_total": 3,
+            "delta_vs_avg": -8,
+            "relative_diff_pct": -40,
+            "verdict": "behind"
+          },
+          {
+            "key": "velocity_per_30d",
+            "label": "New reviews per 30 days",
+            "unit": "",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 6
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 20
+              },
+              {
+                "place_id": "C2",
+                "name": "Comp Two",
+                "role": "competitor",
+                "value": 0
+              }
+            ],
+            "best": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 20
+            },
+            "worst": {
+              "place_id": "C2",
+              "name": "Comp Two",
+              "value": 0
+            },
+            "competitor_avg": 10,
+            "you": 6,
+            "your_rank": 2,
+            "ranked_total": 3,
+            "delta_vs_avg": -4,
+            "relative_diff_pct": -40,
+            "verdict": "behind"
+          },
+          {
+            "key": "pct_5star",
+            "label": "5-star share (period)",
+            "unit": "%",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 75
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 87.5
+              }
+            ],
+            "best": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 87.5
+            },
+            "worst": {
+              "place_id": "OWN",
+              "name": "Mine",
+              "value": 75
+            },
+            "competitor_avg": 87.5,
+            "you": 75,
+            "your_rank": 2,
+            "ranked_total": 2,
+            "delta_vs_avg": -12.5,
+            "relative_diff_pct": -14.3,
+            "verdict": "behind"
+          },
+          {
+            "key": "pct_negative",
+            "label": "1–2★ share (period)",
+            "unit": "%",
+            "higher_is_better": false,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 25
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 12.5
+              }
+            ],
+            "best": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 12.5
+            },
+            "worst": {
+              "place_id": "OWN",
+              "name": "Mine",
+              "value": 25
+            },
+            "competitor_avg": 12.5,
+            "you": 25,
+            "your_rank": 2,
+            "ranked_total": 2,
+            "delta_vs_avg": 12.5,
+            "relative_diff_pct": 100,
+            "verdict": "behind"
+          },
+          {
+            "key": "reply_rate",
+            "label": "Owner reply rate",
+            "unit": "%",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 100
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 25
+              }
+            ],
+            "best": {
+              "place_id": "OWN",
+              "name": "Mine",
+              "value": 100
+            },
+            "worst": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 25
+            },
+            "competitor_avg": 25,
+            "you": 100,
+            "your_rank": 1,
+            "ranked_total": 2,
+            "delta_vs_avg": 75,
+            "relative_diff_pct": 300,
+            "verdict": "leading"
+          },
+          {
+            "key": "negative_reply_rate",
+            "label": "Reply rate to 1–2★ reviews",
+            "unit": "%",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 100
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 100
+              }
+            ],
+            "best": {
+              "place_id": "OWN",
+              "name": "Mine",
+              "value": 100
+            },
+            "worst": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 100
+            },
+            "competitor_avg": 100,
+            "you": 100,
+            "your_rank": 1,
+            "ranked_total": 2,
+            "delta_vs_avg": 0,
+            "relative_diff_pct": 0,
+            "verdict": "leading"
+          },
+          {
+            "key": "avg_reply_days",
+            "label": "Avg. owner reply time (days)",
+            "unit": "d",
+            "higher_is_better": false,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 0.5
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 0.5
+              }
+            ],
+            "best": {
+              "place_id": "OWN",
+              "name": "Mine",
+              "value": 0.5
+            },
+            "worst": {
+              "place_id": "C1",
+              "name": "Comp One",
+              "value": 0.5
+            },
+            "competitor_avg": 0.5,
+            "you": 0.5,
+            "your_rank": 1,
+            "ranked_total": 2,
+            "delta_vs_avg": 0,
+            "relative_diff_pct": 0,
+            "verdict": "leading"
+          },
+          {
+            "key": "photos_count",
+            "label": "Photos on Google profile",
+            "unit": "",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 40
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 40
+              },
+              {
+                "place_id": "C2",
+                "name": "Comp Two",
+                "role": "competitor",
+                "value": 40
+              }
+            ],
+            "best": {
+              "place_id": "OWN",
+              "name": "Mine",
+              "value": 40
+            },
+            "worst": {
+              "place_id": "C2",
+              "name": "Comp Two",
+              "value": 40
+            },
+            "competitor_avg": 40,
+            "you": 40,
+            "your_rank": 1,
+            "ranked_total": 3,
+            "delta_vs_avg": 0,
+            "relative_diff_pct": 0,
+            "verdict": "leading"
+          },
+          {
+            "key": "profile_completeness",
+            "label": "Profile completeness",
+            "unit": "/100",
+            "higher_is_better": true,
+            "values": [
+              {
+                "place_id": "OWN",
+                "name": "Mine",
+                "role": "own",
+                "value": 90
+              },
+              {
+                "place_id": "C1",
+                "name": "Comp One",
+                "role": "competitor",
+                "value": 90
+              },
+              {
+                "place_id": "C2",
+                "name": "Comp Two",
+                "role": "competitor",
+                "value": 90
+              }
+            ],
+            "best": {
+              "place_id": "OWN",
+              "name": "Mine",
+              "value": 90
+            },
+            "worst": {
+              "place_id": "C2",
+              "name": "Comp Two",
+              "value": 90
+            },
+            "competitor_avg": 90,
+            "you": 90,
+            "your_rank": 1,
+            "ranked_total": 3,
+            "delta_vs_avg": 0,
+            "relative_diff_pct": 0,
+            "verdict": "leading"
+          }
+        ],
+        "advantages": [
+          {
+            "key": "reply_rate",
+            "label": "Owner reply rate",
+            "unit": "%",
+            "you": 100,
+            "competitor_avg": 25,
+            "best_name": "Mine",
+            "best_value": 100,
+            "relative_diff_pct": 300
+          }
+        ],
+        "gaps": [
+          {
+            "key": "pct_negative",
+            "label": "1–2★ share (period)",
+            "unit": "%",
+            "you": 25,
+            "competitor_avg": 12.5,
+            "best_name": "Comp One",
+            "best_value": 12.5,
+            "relative_diff_pct": -100
+          },
+          {
+            "key": "lifetime_reviews",
+            "label": "Total reviews (all-time)",
+            "unit": "",
+            "you": 300,
+            "competitor_avg": 510,
+            "best_name": "Comp One",
+            "best_value": 900,
+            "relative_diff_pct": -41.2
+          },
+          {
+            "key": "window_review_count",
+            "label": "Reviews in selected period",
+            "unit": "",
+            "you": 12,
+            "competitor_avg": 20,
+            "best_name": "Comp One",
+            "best_value": 40,
+            "relative_diff_pct": -40
+          },
+          {
+            "key": "velocity_per_30d",
+            "label": "New reviews per 30 days",
+            "unit": "",
+            "you": 6,
+            "competitor_avg": 10,
+            "best_name": "Comp One",
+            "best_value": 20,
+            "relative_diff_pct": -40
+          }
+        ],
+        "leaderboard": [
+          {
+            "rank": 1,
+            "place_id": "C1",
+            "name": "Comp One",
+            "role": "competitor",
+            "health_score": 83.2,
+            "breakdown": {
+              "rating_quality": {
+                "label": "All-time rating",
+                "score": 80,
+                "weight": 0.3,
+                "effective_weight": 0.3
+              },
+              "social_proof": {
+                "label": "Review volume",
+                "score": 100,
+                "weight": 0.2,
+                "effective_weight": 0.2
+              },
+              "momentum": {
+                "label": "Review momentum",
+                "score": 100,
+                "weight": 0.2,
+                "effective_weight": 0.2
+              },
+              "recent_sentiment": {
+                "label": "Recent sentiment",
+                "score": 81.5,
+                "weight": 0.15,
+                "effective_weight": 0.15
+              },
+              "responsiveness": {
+                "label": "Owner responsiveness",
+                "score": 25,
+                "weight": 0.1,
+                "effective_weight": 0.1
+              },
+              "profile": {
+                "label": "Profile completeness",
+                "score": 90,
+                "weight": 0.05,
+                "effective_weight": 0.05
+              }
+            }
+          },
+          {
+            "rank": 2,
+            "place_id": "OWN",
+            "name": "Mine",
+            "role": "own",
+            "health_score": 64.7,
+            "breakdown": {
+              "rating_quality": {
+                "label": "All-time rating",
+                "score": 60,
+                "weight": 0.3,
+                "effective_weight": 0.3
+              },
+              "social_proof": {
+                "label": "Review volume",
+                "score": 83.9,
+                "weight": 0.2,
+                "effective_weight": 0.2
+              },
+              "momentum": {
+                "label": "Review momentum",
+                "score": 30,
+                "weight": 0.2,
+                "effective_weight": 0.2
+              },
+              "recent_sentiment": {
+                "label": "Recent sentiment",
+                "score": 62.5,
+                "weight": 0.15,
+                "effective_weight": 0.15
+              },
+              "responsiveness": {
+                "label": "Owner responsiveness",
+                "score": 100,
+                "weight": 0.1,
+                "effective_weight": 0.1
+              },
+              "profile": {
+                "label": "Profile completeness",
+                "score": 90,
+                "weight": 0.05,
+                "effective_weight": 0.05
+              }
+            }
+          },
+          {
+            "rank": 3,
+            "place_id": "C2",
+            "name": "Comp Two",
+            "role": "competitor",
+            "health_score": 45.7,
+            "breakdown": {
+              "rating_quality": {
+                "label": "All-time rating",
+                "score": 50,
+                "weight": 0.3,
+                "effective_weight": 0.333
+              },
+              "social_proof": {
+                "label": "Review volume",
+                "score": 70.5,
+                "weight": 0.2,
+                "effective_weight": 0.222
+              },
+              "momentum": {
+                "label": "Review momentum",
+                "score": 0,
+                "weight": 0.2,
+                "effective_weight": 0.222
+              },
+              "recent_sentiment": {
+                "label": "Recent sentiment",
+                "score": 50,
+                "weight": 0.15,
+                "effective_weight": 0.167
+              },
+              "responsiveness": {
+                "label": "Owner responsiveness",
+                "score": null,
+                "weight": 0.1,
+                "effective_weight": 0
+              },
+              "profile": {
+                "label": "Profile completeness",
+                "score": 90,
+                "weight": 0.05,
+                "effective_weight": 0.056
+              }
+            }
+          }
+        ],
+        "head_to_head": null
+      },
+      "theme_matrix": {
+        "taxonomy": [
+          {
+            "key": "service_quality",
+            "label": "Core product / service quality"
+          },
+          {
+            "key": "staff_friendliness",
+            "label": "Staff friendliness & attitude"
+          },
+          {
+            "key": "professionalism_expertise",
+            "label": "Professionalism & expertise"
+          },
+          {
+            "key": "wait_time_speed",
+            "label": "Wait time & speed"
+          },
+          {
+            "key": "pricing_value",
+            "label": "Pricing & value for money"
+          },
+          {
+            "key": "cleanliness_ambience",
+            "label": "Cleanliness & ambience"
+          },
+          {
+            "key": "communication_booking",
+            "label": "Communication & booking / availability"
+          },
+          {
+            "key": "location_access",
+            "label": "Location, parking & access"
+          },
+          {
+            "key": "trust_honesty",
+            "label": "Trust & honesty"
+          }
+        ],
+        "rows": [
+          {
+            "place_id": "OWN",
+            "name": "Mine",
+            "role": "own",
+            "reviews_analyzed": 12,
+            "themes": {
+              "service_quality": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "staff_friendliness": {
+                "positive": 8,
+                "negative": 1,
+                "mentions": 9,
+                "positive_pct": 66.7,
+                "negative_pct": 8.3,
+                "net_pct": 58.3
+              },
+              "professionalism_expertise": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "wait_time_speed": {
+                "positive": 0,
+                "negative": 12,
+                "mentions": 12,
+                "positive_pct": 0,
+                "negative_pct": 100,
+                "net_pct": -100
+              },
+              "pricing_value": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "cleanliness_ambience": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "communication_booking": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "location_access": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "trust_honesty": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              }
+            }
+          },
+          {
+            "place_id": "C1",
+            "name": "Comp One",
+            "role": "competitor",
+            "reviews_analyzed": 40,
+            "themes": {
+              "service_quality": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "staff_friendliness": {
+                "positive": 8,
+                "negative": 1,
+                "mentions": 9,
+                "positive_pct": 20,
+                "negative_pct": 2.5,
+                "net_pct": 17.5
+              },
+              "professionalism_expertise": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "wait_time_speed": {
+                "positive": 0,
+                "negative": 40,
+                "mentions": 40,
+                "positive_pct": 0,
+                "negative_pct": 100,
+                "net_pct": -100
+              },
+              "pricing_value": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "cleanliness_ambience": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "communication_booking": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "location_access": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              },
+              "trust_honesty": {
+                "positive": 0,
+                "negative": 0,
+                "mentions": 0,
+                "positive_pct": 0,
+                "negative_pct": 0,
+                "net_pct": 0
+              }
+            }
+          }
+        ],
+        "leaders": [
+          {
+            "key": "service_quality",
+            "label": "Core product / service quality",
+            "best": null,
+            "weakest": null
+          },
+          {
+            "key": "staff_friendliness",
+            "label": "Staff friendliness & attitude",
+            "best": {
+              "name": "Mine",
+              "place_id": "OWN",
+              "net_pct": 58.3
+            },
+            "weakest": {
+              "name": "Comp One",
+              "place_id": "C1",
+              "net_pct": 17.5
+            }
+          },
+          {
+            "key": "professionalism_expertise",
+            "label": "Professionalism & expertise",
+            "best": null,
+            "weakest": null
+          },
+          {
+            "key": "wait_time_speed",
+            "label": "Wait time & speed",
+            "best": {
+              "name": "Mine",
+              "place_id": "OWN",
+              "net_pct": -100
+            },
+            "weakest": {
+              "name": "Comp One",
+              "place_id": "C1",
+              "net_pct": -100
+            }
+          },
+          {
+            "key": "pricing_value",
+            "label": "Pricing & value for money",
+            "best": null,
+            "weakest": null
+          },
+          {
+            "key": "cleanliness_ambience",
+            "label": "Cleanliness & ambience",
+            "best": null,
+            "weakest": null
+          },
+          {
+            "key": "communication_booking",
+            "label": "Communication & booking / availability",
+            "best": null,
+            "weakest": null
+          },
+          {
+            "key": "location_access",
+            "label": "Location, parking & access",
+            "best": null,
+            "weakest": null
+          },
+          {
+            "key": "trust_honesty",
+            "label": "Trust & honesty",
+            "best": null,
+            "weakest": null
+          }
+        ]
+      },
+      "ai": {
+        "executive_summary": {
+          "headline": "You trail on volume",
+          "market_position_statement": "x",
+          "overall_verdict": "behind",
+          "key_findings": [
+            {
+              "finding": "f",
+              "evidence": "e",
+              "importance": "high"
+            }
+          ]
+        },
+        "competitive_landscape": {
+          "competition_intensity": "high",
+          "reasoning": "r",
+          "market_leaders": [
+            "Comp One"
+          ],
+          "market_summary": "s"
+        },
+        "competitor_profiles": [
+          {
+            "place_id": "C1",
+            "name": "Comp One",
+            "positioning_label": "",
+            "how_they_win": [
+              "a"
+            ],
+            "vulnerabilities": [],
+            "threat_level": "high",
+            "threat_reasoning": "",
+            "what_you_can_learn": []
+          },
+          {
+            "place_id": "C2",
+            "name": "Comp Two",
+            "positioning_label": "",
+            "how_they_win": [],
+            "vulnerabilities": [],
+            "threat_level": "medium",
+            "threat_reasoning": "",
+            "what_you_can_learn": []
+          }
+        ],
+        "own_business_assessment": {
+          "where_you_win": [
+            {
+              "point": "p",
+              "evidence": "e"
+            }
+          ],
+          "where_you_lose": [],
+          "swot": {
+            "strengths": [
+              "s"
+            ],
+            "weaknesses": [],
+            "opportunities": [],
+            "threats": []
+          },
+          "reputation_risks": []
+        },
+        "head_to_head": null,
+        "market_gaps": [
+          {
+            "gap": "g",
+            "evidence": "e",
+            "opportunity": "o",
+            "who_is_affected": "w"
+          }
+        ],
+        "customer_expectations": {
+          "must_haves": [],
+          "delighters": [],
+          "deal_breakers": []
+        },
+        "pricing_landscape": {
+          "summary": "",
+          "by_business": []
+        },
+        "strategy": {
+          "positioning_recommendation": "pos",
+          "differentiators_to_build": [],
+          "messaging_angles": [],
+          "things_to_fix_first": [],
+          "ideas_borrowed_from_competitors": []
+        },
+        "action_plan": [
+          {
+            "priority": 1,
+            "title": "A",
+            "why": "",
+            "evidence": "",
+            "impact": "high",
+            "effort": "low",
+            "timeframe": "7_days",
+            "kpi": "k",
+            "owner_suggestion": ""
+          },
+          {
+            "priority": 2,
+            "title": "B",
+            "why": "",
+            "evidence": "",
+            "impact": "medium",
+            "effort": "medium",
+            "timeframe": "30_days",
+            "kpi": "",
+            "owner_suggestion": ""
+          }
+        ],
+        "reputation_playbook": {
+          "review_generation_tactics": [],
+          "response_guidelines": [],
+          "issues_to_address_publicly": []
+        },
+        "kpis_to_track": [],
+        "watchlist": [],
+        "confidence": {
+          "level": "medium",
+          "reasons": []
+        },
+        "limitations": [
+          "l"
+        ]
+      },
+      "health_score_method": {
+        "weights": {
+          "rating_quality": 0.3,
+          "social_proof": 0.2,
+          "momentum": 0.2,
+          "recent_sentiment": 0.15,
+          "responsiveness": 0.1,
+          "profile": 0.05
+        },
+        "note": "Computed from public Google Maps data. Missing components are excluded and remaining weights re-normalised."
+      },
+      "data_quality": {
+        "ai_status": "complete",
+        "ai_message": null,
+        "entities_requested": 3,
+        "entities_with_data": 3,
+        "entities_without_period_reviews": [
+          {
+            "place_id": "C2",
+            "name": "Comp Two"
+          }
+        ],
+        "entities_failed": [],
+        "entity_analysis_failures": [],
+        "apify_errors": [],
+        "sample_size_confidence": "low",
+        "limitations": [
+          "Comp Two has no reviews in the selected period; its ratings/themes are based on all-time profile data only.",
+          "All data comes from public Google Maps listings; it does not include private data such as revenue, footfall or ad spend.",
+          "l"
+        ]
+      }
+    }
+  }
+}
