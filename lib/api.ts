@@ -45,11 +45,11 @@ async function post<T>(body: unknown, timeoutMs: number): Promise<T> {
   } finally { clearTimeout(timeout) }
 }
 
-export const getConfig = () => post<ConfigResponse>({ mode: 'config' }, 2_000)
-export const discover = (input: Record<string, unknown>) => post<DiscoverResponse>({ mode: 'discover', ...input }, 90_000)
+export const getConfig = () => post<ConfigResponse>({ mode: 'config' }, 10_000)
+export const discover = (input: Record<string, unknown>) => post<DiscoverResponse>({ mode: 'discover', ...input }, 360_000)
 export const findOwnBusiness = (businessName: string, city: string, country: string, area?: string) => discover({ business_name: businessName, city, country, ...(area ? { area } : {}), max_results: 5 })
-export const quickCompare = (ownBusiness: { place_id: string; name: string } | null, competitors: { place_id: string; name: string; search_rank: number }[]) => post<StatsResponse>({ mode: 'stats', ...(ownBusiness ? { own_business: ownBusiness } : {}), competitors, include_contacts: true }, 120_000)
-export const getReviews = (placeId: string, name?: string, reviewWindow = '30d', maxReviews = 100, ratingFilter?: number[]) => post<ReviewsResponse>({ mode: 'reviews', place_id: placeId, ...(name ? { name } : {}), review_window: reviewWindow, max_reviews: maxReviews, ...(ratingFilter?.length ? { rating_filter: ratingFilter } : {}) }, 120_000)
-export const analyze = (input: Record<string, unknown>) => post<AnalyzeResponse>({ mode: 'analyze', ...input }, 360_000)
+export const quickCompare = (ownBusiness: { place_id: string; name: string } | null, competitors: { place_id: string; name: string; search_rank: number }[]) => post<StatsResponse>({ mode: 'stats', ...(ownBusiness ? { own_business: ownBusiness } : {}), competitors, include_contacts: true }, 360_000)
+export const getReviews = (placeId: string, name?: string, reviewWindow = '30d', maxReviews = 100, ratingFilter?: number[]) => post<ReviewsResponse>({ mode: 'reviews', place_id: placeId, ...(name ? { name } : {}), review_window: reviewWindow, max_reviews: maxReviews, ...(ratingFilter?.length ? { rating_filter: ratingFilter } : {}) }, 360_000)
+export const analyze = (input: Record<string, unknown>) => post<AnalyzeResponse>({ mode: 'analyze', ...input }, 900_000)
 
 export { API_BASE, WEBHOOK_URL }
