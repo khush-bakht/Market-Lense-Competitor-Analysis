@@ -292,6 +292,10 @@ button:not(:disabled):active {
   min-width: 0;
 }
 
+.report-workspace > .no-print > div:last-child > button:nth-child(n + 3) {
+  display: none;
+}
+
 .print-report {
   display: none;
 }
