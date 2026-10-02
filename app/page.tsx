@@ -34,13 +34,11 @@ export default function Page() {  const [step, setStep] = useState<Step>('setup'
   const [reviewLoading, setReviewLoading] = useState(false)
   const [reviewWindow, setReviewWindow] = useState<ReviewWindowKey>('30d')
   useEffect(() => {
-    const saved = sessionStorage.getItem('marketlens-draft')
-    if (saved) {
-      try { setDraft({ ...emptyDraft, ...JSON.parse(saved) }) } catch { /* ignore stale drafts */ }
-    }
     getConfig().then((response) => setConfig({ ...fallbackConfig, ...response })).catch(() => setConfig(fallbackConfig))
   }, [])
-  useEffect(() => { sessionStorage.setItem('marketlens-draft', JSON.stringify(draft)) }, [draft])
+  useEffect(() => {
+    if (step === 'setup' && !loading) setDraft(emptyDraft)
+  }, [step])
   const update = (patch: Partial<Draft>) => setDraft((current) => ({ ...current, ...patch }))
   const validateSetup = () => { if (!draft.businessType.trim() || !draft.city.trim() || !draft.country.trim()) { setError('Business type, city, and country are required.'); return false } return true }
   const runOwnSearch = async () => { if (!ownQuery.trim() || !draft.city || !draft.country) return; setOwnSearchLoading(true); setError(''); try { const response = await findOwnBusiness(ownQuery, draft.city, draft.country, draft.area); setOwnResults(response.places) } catch (cause) { setError(cause instanceof Error ? cause.message : 'Business search failed.') } finally { setOwnSearchLoading(false) } }
