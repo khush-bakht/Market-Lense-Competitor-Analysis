@@ -289,8 +289,51 @@ button:not(:disabled):active {
 
 .report-workspace {
   @apply text-foreground;
+  min-width: 0;
 }
 
+.print-report {
+  display: none;
+}
+
+.theme-matrix-table th,
+.theme-matrix-table td {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.analysis-loader > div > div:last-child > div {
+  transition: background-color 500ms ease, color 500ms ease, transform 500ms ease, opacity 500ms ease;
+  animation: analysis-stage 72s linear infinite;
+}
+
+.analysis-loader > div > div:last-child > div:nth-child(2) {
+  animation-delay: 18s;
+}
+
+.analysis-loader > div > div:last-child > div:nth-child(3) {
+  animation-delay: 36s;
+}
+
+.analysis-loader > div > div:last-child > div:nth-child(4) {
+  animation-delay: 54s;
+}
+
+@keyframes analysis-stage {
+  0%, 24% {
+    background-color: #d9f3f0;
+    color: #0f6f72;
+    opacity: 1;
+    transform: translateX(4px);
+  }
+
+  25%, 100% {
+    background-color: transparent;
+    color: #98a2b3;
+    opacity: 0.7;
+    transform: translateX(0);
+  }
+}
 
 .print-header {
   display: none;
@@ -308,8 +351,14 @@ button:not(:disabled):active {
   }
 
   header,
-  .no-print {
+  .no-print,
+  .report-screen,
+  .analysis-loader {
     display: none !important;
+  }
+
+  .print-report {
+    display: block !important;
   }
 
   .print-header {
@@ -328,5 +377,13 @@ button:not(:disabled):active {
   .report-document section {
     break-inside: avoid;
     box-shadow: none !important;
+  }
+
+  .report-document .theme-matrix {
+    break-inside: auto;
+  }
+
+  .report-document .theme-matrix-table {
+    font-size: 9px;
   }
 }
