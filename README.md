@@ -43,7 +43,7 @@ MarketLens addresses these challenges by automating competitor discovery, data c
 - **Strategic Recommendations:** Provides AI-generated recommendations to help businesses identify improvement opportunities and competitive advantages.
 - **Downloadable Reports:** Allows users to export or download generated analysis reports for future reference.
 
-## ⚙️ How It Works
+##  How It Works
 
 MarketLens follows an automated research and analysis workflow:
 
