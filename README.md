@@ -93,6 +93,14 @@ Users can download the generated analysis reports for future reference.
 - **Dynamic Competitor Research:** Competitor discovery and selection are based on the user's business name, location, and analysis requirements.
 - **Integrated Web Application:** React provides the user-facing interface for configuring and viewing competitor analyses.
 
+## Portfolio Purpose
+
+This repository is intended for **portfolio and demonstration purposes** to showcase MarketLens
+
+The **n8n workflows are not included** in this repository. 
+
+It is shared for portfolio evaluation and professional review only.
+
 ## Live Demo
 
 Explore the deployed application:
